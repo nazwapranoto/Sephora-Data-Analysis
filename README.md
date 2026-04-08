@@ -1,32 +1,37 @@
-# Sephora Skincare Data Analysis: Uncovering Customer Preferences & Chemical Ingredient Trends 💄🧪
+# Sephora Skincare Data Analysis: Uncovering Customer Preferences & Chemical Ingredient Trends
 
-## 📌 Project Overview
-Proyek ini bertujuan untuk menganalisis data produk perawatan kecantikan dari Sephora guna menemukan wawasan bisnis (*business insights*) terkait preferensi pelanggan, strategi penetapan harga, dan tren formulasi bahan kimia (*ingredients*). Analisis ini menggunakan pustaka data terkemuka di Python untuk mengeksplorasi ribuan produk dan memberikan rekomendasi berbasis data bagi pengembang produk kosmetik.
+## Project Overview
+Proyek ini menganalisis data produk perawatan kulit dan kosmetik dari Sephora untuk melihat lebih dalam bagaimana hubungan antara harga, rating pengguna, merek, dan komposisi bahan kimia dalam produk. Fokus utamanya adalah menggali wawasan yang relavan bagi pengembang produk kosmetik dan pelaku bisnis kecantikan, mulai dari strategi harga, positioning merek, sampai tren fprmulasi bahan aktif yang sebenarnya disukai konsumen.
 
-## 🛠️ Tools & Tech Stack
+## Tools & Tech Stack
 * **Language:** Python
 * **Libraries:** Pandas (Data Manipulation & Cleaning), Matplotlib & Seaborn (Data Visualization)
 * **Environment:** Jupyter Notebook / Google Colab
 
-## ❓ Business Questions Addressed
-1. Apakah produk kosmetik dengan harga yang lebih mahal selalu mendapatkan *rating* yang lebih tinggi dari pengguna?
-2. *Brand* apa saja yang mendominasi pasar dalam memproduksi produk berkualitas tinggi (*rating* >= 4.5)?
-3. **[Advanced]** Bahan aktif kimia (*active ingredients*) apa yang paling banyak diformulasikan di dalam produk-produk berating tertinggi?
+## Business Questions
+1. Apakah produk kosmetik dengan harga yang lebih mahal cenderung memiliki *rating* yang lebih baik?
+2. *Brand* apa saja yang konsisten menghasilkan produk dengan *rating* tinggi (>= 4.5)?
+3. Bahan aktif kimia apa yang paling banyak muncul pada produk dengan *rating* tertinggi, khususnya untuk kategori *skincare*?
 
-## 💡 Key Business Insights
-Berdasarkan *Exploratory Data Analysis* (EDA) yang telah dilakukan, ditemukan beberapa wawasan krusial:
+## Key Insights
+BRingkasa temuan dari *Exploratory Data Analysis (EDA)*:
 
-* **Insight 1: Harga Mahal Bukan Jaminan Kepuasan Pelanggan** Mayoritas produk kosmetik dan *skincare* berada di rentang harga di bawah $100 dan berhasil memperoleh *rating* sangat tinggi (di atas 4.0). Tidak ditemukan korelasi positif yang kuat antara tingginya harga produk dengan tingginya *rating* pelanggan. Beberapa produk di atas $300 bahkan memiliki metrik kepuasan yang rendah.
+* **1. Harga mahal tidak selalu berbanding lurus dengan kepuasan pelanggan**
+*   Sebagian besar produk dengan *rating* tinggi justru berda di bawah harga 100 USD. Korelasi antara harga dan rating terlihat lemah, ada beberapa produk dengan harga di atas 300 USD tetapi memiliki tingkat kepuasan yang relatif rendah.
 
-* **Insight 2: Dominasi *In-House Brand* dan Kekuatan Merek *Luxury*** Merek *in-house* (**SEPHORA COLLECTION**) memimpin jumlah produk dengan *rating* tertinggi berkat variasi katalog yang masif dan harga yang kompetitif. Namun, merek *luxury* konvensional seperti **Dior**, **Yves Saint Laurent**, dan **Armani Beauty** tetap menunjukkan dominasi kualitas yang sangat kuat dan mempertahankan loyalitas konsumen.
+* **2. In-House brand kuat di volume, sementara luxury brand kuat di persepsi kualitas**
+* SEPHORA COLLECTION sebagai *in-house brand* mendominasi jumlah produk dengan *rating* tinggi berkat variasi produk yang luas dan harga yang lebih terjangkau. Di sisi lain, merek-merek *luxury* seperti Dior, Yves Saint Laurent, dan Armani Beauty tetap mempertahankan citra kualitas tinggi dan loyalitas pelanggan meskipun berada di segmen harga premium.
 
-* **Insight 3: Kunci Kepuasan Pelanggan Ada pada Hidrasi dan *Skin Barrier*** Analisis komponen kimia menunjukkan bahwa bahan aktif yang paling mendominasi produk *skincare* berating tinggi bukanlah agen eksfoliator keras, melainkan agen hidrasi dan penenang kulit seperti **Glycerin** (humektan), **Panthenol** (Vitamin B5), dan **Squalane**. Hal ini membuktikan bahwa konsumen Sephora sangat menghargai produk dengan formulasi dasar yang aman, melembapkan, dan minim iritasi (*gentle formulation*).
+* **3. Produk dengan formulasi fokus hidrasi dan skin barrier cenderung lebih disukai**
+* Dari sisi komposisi kimia, bahan aktif yang paling sering muncul pada produk *skincare* berating tinggi bukanlah eksfoliator "keras", melainkan agen hidrasi dan penenang kulit seperti **glycerin, penthenol (vitamin B5), dan squalane**. Ini mengindikasikan preferensi konsumen terhadap produk dengan formulasi yang lembut, menenangkan, dan mendukung *skin barrier*.
 
-## 📂 Repository Files
-* `Sephora_Skincare_EDA.ipynb`: File utama Jupyter Notebook yang berisi kode Python untuk proses pembersihan data hingga visualisasi.
-* `product_info.csv`: Dataset utama yang berisi informasi harga, *rating*, merek, dan komposisi bahan produk.
 
-## 👩‍🔬 About the Author
-**Nazwa** *Chemistry Undergraduate Student at Institut Teknologi Bandung (ITB) | Aspiring Data Analyst* Menggabungkan pemahaman sains presisi dengan teknik analisis data untuk memecahkan masalah bisnis yang kompleks. Sangat antusias dalam mengeksplorasi data, membangun visualisasi, dan menarik wawasan yang dapat ditindaklanjuti.
+## Repository Structure
+* `Sephora_Skincare_EDA.ipynb`: notebook utama berisi alur analisis, mulai hari data cleaning hingga visualisasi.
+* `product_info.csv`:dataset berisi informasi harga, *rating*, merek, dan komposisi bahan produk.
 
-*Let's connect and discuss data!*
+## About the Author
+**Nazwa** 
+*Undergraduate Chemistry Student – Institut Teknologi Bandung (ITB) | Aspiring Data Analyst* 
+Latar belakang kimia membantu dalam membaca komposisi bahan dan memahami peran masing-masing senyawa, sedangkan analisis data digunakan untuk mengubah kumpulan angka dan teks menjadi insight yang bisa dipakai dalam konteks bisnis maupun pengembangan produk. Tertarik pada persilangan antara sains, data, dan industri kecantikan.
+
